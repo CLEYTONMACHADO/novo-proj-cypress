@@ -23,6 +23,18 @@ class Login {
         cy.get(this.selectorList().buttonLogin).click()
         cy.get(this.selectorList().divErrorCred).should('be.visible') // verifica se a mensagem de erro
         cy.get('body').should('contain', 'Invalid credentials') // verifica se o body tem o texto Invalid credentials
+    
+        // if (2 > 1){
+        //     cy.console('teste')
+
+        // }else if(2 === 2){
+        //     cy.console('outro teste')
+
+        // }else{
+        //     cy.console('erro')
+
+        // }
+    
     }
 
 
